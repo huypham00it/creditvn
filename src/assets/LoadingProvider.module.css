@@ -1,0 +1,26 @@
+
+.loadingProvider {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(123.18% 99.53% at 130.47% 0%, rgba(253, 67, 99, 0.7) 0%, rgba(45, 34, 155, 0.7) 100%);
+    max-height: none !important;
+    position: fixed !important;
+    bottom: 0;
+    right: 0;
+}
+
+.loadingProvider svg{
+    width: 1.7em;
+    height: 1.7em;
+    fill: currentcolor;
+}
+
+.loadingProvider div{
+    font-family: Montserrat !important;
+
+}
+
+@media screen and (min-width: 768px){
+    .logo {
+        max-width: 353.33px;
+        height: auto;
+    }
+}

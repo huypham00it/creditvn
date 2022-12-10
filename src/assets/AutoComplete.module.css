@@ -1,0 +1,63 @@
+.suggestions_wrapper {
+    max-height: 224px;
+    height: auto;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    -o-box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    -webkit-box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    -moz-box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    -ms-box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    border-radius: 2px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 100%;
+    transition: max-height .3s linear;
+    -webkit-overflow-scrolling: touch;
+}
+
+.suggestions_wrapper::-webkit-scrollbar {
+    background: transparent;
+    height: 10px;
+    overflow: visible;
+    width: 5px;
+}
+
+.suggestions_wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 5px;
+}
+
+.suggestions_wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.suggestions_wrapper::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.placement_top {
+    top: unset;
+    bottom: 0;
+}
+
+.suggestions_hide {
+    max-height: 0 !important;
+    overflow: hidden;
+}
+
+.suggestion__item {
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+.suggestion__item:first-child,
+.suggestion__item:hover {
+    background-color: #8174d6;
+}
+
+.input {
+    width: 100%;
+}

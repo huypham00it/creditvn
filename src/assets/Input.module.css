@@ -1,0 +1,40 @@
+.signup_input {
+    border-radius: 0;
+    padding: 5px 0;
+    box-shadow: inset 0px -1px 0px #D9D9D9;
+    -webkit-box-shadow: inset 0px -1px 0px #D9D9D9;
+    -o-box-shadow: inset 0px -1px 0px #D9D9D9;
+    -ms-box-shadow: inset 0px -1px 0px #D9D9D9;
+    -moz-box-shadow: inset 0px -1px 0px #D9D9D9;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+}
+.signup_input:hover,
+.signup_input:focus-visible {
+    box-shadow: inset 0px -1px 0px #7B61FF;
+    -webkit-box-shadow: inset 0px -1px 0px #7B61FF;
+    -o-box-shadow: inset 0px -1px 0px #7B61FF;
+    -ms-box-shadow: inset 0px -1px 0px #7B61FF;
+    -moz-box-shadow: inset 0px -1px 0px #7B61FF;
+}
+.signup_input:focus-visible.input_error {
+    box-shadow: inset 0px -1px 0px #FF4D4F;
+    -webkit-box-shadow: inset 0px -1px 0px #FF4D4F;
+    -o-box-shadow: inset 0px -1px 0px #FF4D4F;
+    -ms-box-shadow: inset 0px -1px 0px #FF4D4F;
+    -moz-box-shadow: inset 0px -1px 0px #FF4D4F;
+}
+
+.message_error {
+    height: 18px;
+    color: #FF4D4F;
+    font-family: 'BeVietnamPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    text-align: left;
+}

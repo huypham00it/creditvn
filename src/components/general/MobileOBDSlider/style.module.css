@@ -1,0 +1,267 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 12px;
+}
+
+.slide_inner {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+}
+
+.partner_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.partner_item {
+    padding-top: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner_more {
+    margin: 0 auto;
+}
+
+.arrow_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow_button__prev {
+    left: 20px;
+}
+
+.arrow_button__next {
+    right: 20px
+}
+
+/* Safety and security */
+.safety_security_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.safety_security_item > div {
+    width: 64px;
+    height: 64px;
+    background-color: #6A5EDC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    margin-bottom: 8px;
+}
+
+.safety_security_item svg {
+    height: 32px;
+    width: auto;
+}
+
+.safety_security_item h4 {
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 14;
+    margin-bottom: 0;
+}
+
+/* System */
+.system_sub {
+    padding: 8px;
+    border-radius: 16px;
+    background-color: var(--white-color);
+    color: #594DC9;
+    text-align: center;
+}
+
+.system_items {
+    padding: 8px;
+    border: 2px dashed var(--white-color);
+    border-radius: 22px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.system_items > div {
+    border: 2px solid var(--white-color);
+    padding: 16px 12px;
+    border-radius: 16px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.system_items > div svg {
+    height: 36px;
+    width: auto;
+}
+
+.system_items h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: var(--white-color);
+}
+
+.system_more svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* general */
+.general {
+    text-align: center;
+}
+
+.general h4 {
+    color: var(--white-color);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.move_btn {
+    display: flex;
+    padding: 16px 24px;
+    background-color: var(--white-color);
+    justify-content: space-between;
+    position: relative;
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15; */
+}
+
+.dots {
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots span {
+    display: inline-block;
+    height: 3px;
+    width: 16px;
+    background-color: #594DC9;
+    border-radius: 1px;
+    transition: all .5s linear;
+    transform-origin: 50% 50%;
+}
+
+.dots span.active {
+    width: 24px;
+    background-color: var(--white-color);
+    /* animation: growth .5s linear; */
+}
+
+@keyframes growth {
+    0% {
+        opacity: 0.5;
+        transform: scaleX(0.6);
+    }
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        padding: 0;
+    }
+
+    .partner_item {
+        width: 104px;
+        height: 104px;
+    }
+
+    .arrow_button__next {
+        right: 10px;
+    }
+
+    .arrow_button__prev {
+        left: 10px;
+    }
+
+    .system_items {
+        gap: 6px;
+    }
+
+    .system_sub {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .system_items > div {
+        padding: 12px 8px;
+    }
+
+    .system_items h4 {
+        font-size: 12px;
+    }
+
+    .system_more svg {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .slide h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .slide > div {
+        max-width: 70% !important;
+    }
+
+    .system_items {
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .system_items > div {
+        padding: 8px;
+    }
+
+    .system_items > div svg {
+        height: 20px;
+    }
+
+    .partner_wrap > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .partner_item {
+        width: 80px;
+        height: 80px;
+        padding-top: 70% !important;
+    }
+}

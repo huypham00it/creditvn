@@ -1,0 +1,31 @@
+{
+  "name": "creditvn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "rm -f .env.local && next dev",
+    "build:staging": "cp .env.staging .env.local && next build",
+    "build": "cp .env.prod .env.local && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ant-design/plots": "^1.2.2",
+    "antd": "^4.23.4",
+    "axios": "0.27.2",
+    "firebase": "9.8.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "12.3.1",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swiper": "^8.4.3",
+    "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
+  }
+}

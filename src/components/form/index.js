@@ -1,0 +1,12 @@
+export { default as IDInput } from './IDInput';
+export { default as NameInput } from './NameInput';
+export { default as BaseInput } from './BaseInput';
+export { default as PhoneNumberInput } from './PhoneNumberInput';
+export { default as SelectInput } from './SelectInput';
+export { default as DateInput } from './DateInput';
+export { default as GenderInput } from './GenderInput';
+export { default as EmailInput } from './EmailInput';
+export { default as PasswordInput } from './PasswordInput';
+export { default as NumberInput } from './NumberInput';
+export { default as LocationInput } from './LocationInput';
+export { default as TextInput } from './TextInput';

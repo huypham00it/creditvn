@@ -1,0 +1,8 @@
+.button span {
+    font-size: 14px;
+}
+
+.submit_button:not(:disabled) {
+    background-color: #F6358E;
+    color: #ffffff
+}

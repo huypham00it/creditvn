@@ -1,0 +1,57 @@
+.experience {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 120px 16px 108px;
+}
+
+.experience_inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 60px;
+    line-height: 73.14px;
+    color: var(--white-color);
+    margin-bottom: 11px;
+}
+
+.experience p {
+    margin-bottom: 86px;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--white-color);
+}
+
+.signup_btn {
+    width: 200px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .experience {
+        padding: 48px 16px;
+    }
+
+    .experience_inner {
+        max-width: 100%;
+    }
+
+    .experience h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .experience p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}

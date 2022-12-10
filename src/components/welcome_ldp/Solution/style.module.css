@@ -1,0 +1,133 @@
+.solution {
+    min-height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    background-color: #1F1677;
+}
+
+.solution__inner {
+    max-width: 68.8%;
+    margin: 0 auto;
+}
+
+.box_left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    color: var(--white-color);
+    padding-right: 160px;
+}
+
+.heading {
+    font-size: 60px;
+    line-height: 73.14px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+
+.box_left p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.box_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    position: relative;
+}
+
+.box_right__item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.box_right__item p {
+    margin-bottom: 0;
+    color: var(--white-color);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.box_right__item_icon {
+    height: 80px;
+    border-radius: 8px 20px 8px 8px;
+    background-color: #FD4363;
+    color: var(--white-color);
+    padding: 15px;
+}
+
+.box_right__item_icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.box_right::after {
+    content: "";
+    display: block;
+    width: 305px;
+    height: 103px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #FD4363;
+    border-bottom: 2px solid #FD4363;
+}
+
+@media screen and (max-width: 768px) {
+    .solution {
+        padding: 48px 16px;
+    }
+
+    .solution__inner {
+        max-width: 100%;
+    }
+
+    .box_left {
+        padding-right: 0;
+        margin-bottom: 48px;
+    }
+
+    .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .box_left p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    
+    .box_right {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 19px;
+    }
+
+    .box_right__item_icon {
+        height: 62px;
+    }
+
+    .box_right__item_icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .box_right__item p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .box_right::after {
+        display: none;
+    }
+}

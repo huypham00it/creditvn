@@ -1,0 +1,22 @@
+.default {
+    color: #391085;
+    background-color: #F5F5F5;
+    border: none;
+}
+.active {
+    color: #fff;
+    background-color: #6A5EDC;
+    border: none;
+}
+
+
+.icon_arrow {
+    color: 'rgba(0, 0, 0, 0.85)';
+}
+.icon_arrow_disabled {
+    color: '#000' !important;
+}
+.icon_arrow svg {
+    width: 12px;
+    height: 12px;
+}

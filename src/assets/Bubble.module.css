@@ -1,0 +1,41 @@
+.gift_wrapper {
+    position: fixed;
+    z-index: 1;
+}
+
+.gift_text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+    color: #07013F;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #4B3FBA;
+}
+
+@media screen and (min-width: 768px) {
+    .gift_wrapper {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .gift_text {
+        bottom: 15px;
+    }
+
+    .close {
+        right: 30px;
+        top: 30px;
+    }
+    
+}

@@ -1,0 +1,127 @@
+.footer {
+    padding: 48px 90px;
+    background-color: #ffffff;
+}
+
+.support_info h3 {
+    font-size: 14px;
+    color: var(--black-color);
+    margin-bottom: 0;
+}
+
+.info_item {
+    display: flex;
+    gap: 8px;
+}
+
+.info_item p {
+    margin-bottom: 0;
+}
+
+.footer_icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.description {
+    margin-top: 32px;
+    color: var(--black-color);
+}
+
+.description p {
+    margin-bottom: 0;
+}
+
+/* Signup Card */
+.signup_wrap {
+    background-size: cover;
+    background-position: bottom center;
+    height: calc(100vh - 77px)
+}
+
+.signup_card {
+    float: right;
+    margin-right: 165px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.signup_card_head {
+    padding: 0;
+}
+
+.signup_card_body {
+    padding: 16px;
+}
+
+.signup_card_body p {
+    margin-bottom: 0;
+}
+
+.signup_card_body small {
+    font-size: 12px;
+}
+
+.signup_card_body>div:not(.slider) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signup_card_body>div:not(.slider) {
+    align-items: flex-end;
+}
+
+.slider {
+    width: 100%;
+}
+
+.signup_card_body>div:first-child span:nth-child(2) {
+    font-size: 20px;
+}
+
+.signup_card_body>div span:nth-child(2) {
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+.signup_card_body>div span:first-child {
+    font-size: 14px;
+}
+
+.policy {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.33);
+}
+
+.borrow_now_btn {
+    margin-top: 16px;
+    width: 100%;
+    padding: 8px;
+    height: 42px;
+}
+
+@media screen and (max-width: 767px) {
+    .signup_wrap {
+        background-image: none !important;
+        height: auto;
+    }
+
+    .signup_card {
+        float: none;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .footer {
+        padding: 32px 24px;
+    }
+
+    .support_info + .support_info {
+        margin-top: 16px;
+    }
+}
